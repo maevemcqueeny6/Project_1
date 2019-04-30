@@ -1,0 +1,44 @@
+.jumbotron {
+    padding: 15px;
+}
+
+.Header {
+    text-align: center;
+}
+
+#minor-header {
+    text-align: center;
+}
+
+#primary-results {
+    border: 5px;
+    text-align: center;
+}
+
+#firebase-results {
+    border: 5px;
+    text-align: center;
+}
+
+#main-results-box {
+    background-color: darkgrey;
+}
+
+#button-color {
+    background-color: blue;
+}
+
+.content-holder {
+	margin-top:10px;
+	border: #cdcdcd medium solid;
+    border-radius: 10px;
+    max-height: 350px;
+}
+
+#eventbrite {
+    overflow-y: auto;
+}
+
+#searchdiv{
+    margin-left: 50vh;
+}
