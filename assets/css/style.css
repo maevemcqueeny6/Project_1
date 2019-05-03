@@ -4,9 +4,10 @@ body {
     cursor:url(myBall.cur),auto;
     background-repeat: no-repeat;
 }
-.jumbotron {
+.jumbotron-fluid {
     padding: 15px;
     background: rgba(255, 255, 255, 0.5);
+    margin-bottom: 5%;
 }
 .Header {
     text-align: center;
@@ -49,7 +50,7 @@ body {
 .footer {
     background: rgba(255, 255, 255, 0.5);
     text-align: center;
-    position: fixed;
+        position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
