@@ -9,80 +9,43 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" />
+    <link rel="icon" href="assets/images/favicon2.jpg" sizes="16x16" type="image/jpg">
     <title>It's A Date!</title>
 </head>
 <body>
-    <div class="container">
-        <div class="jumbotron">
-          <h1 class="Header">Title/Header for Webpage</h1> 
-          <p id="minor-header">Small introduction to what it is all about or other relevant information.</p> 
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-8">
-                <div class="content-holder" id="eventbrite"> 
-                Eventbrite Display
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus placerat tortor ac feugiat aliquam. Nullam velit risus, tempor a pellentesque pulvinar, euismod nec massa. Vestibulum non velit est. Vestibulum ipsum lorem, finibus semper augue eget, dictum vestibulum nunc. Vestibulum id volutpat metus. Praesent nec ullamcorper eros. Vestibulum a nisl sit amet elit molestie fermentum. Cras consequat at nibh non feugiat. Curabitur ut nunc at tellus rutrum feugiat quis egestas lacus. Mauris dapibus felis at vulputate pellentesque. Phasellus quis viverra dui, et vulputate lorem. Nulla aliquam rhoncus massa non pharetra. Sed a massa in diam imperdiet pellentesque.
-                Morbi tincidunt elementum sollicitudin. In dui diam, venenatis nec risus at, efficitur malesuada justo. Nulla aliquam libero vitae mi elementum congue. Nam nibh est, suscipit nec enim vel, pulvinar ornare nisi. Suspendisse semper porttitor orci, eu posuere est interdum nec. Sed suscipit sapien scelerisque dui facilisis, et efficitur est accumsan. Vivamus quis sodales lectus. Pellentesque nisl arcu, ultrices vel nisi quis, ultricies posuere sem. Aenean enim est, sodales vitae volutpat facilisis, placerat nec nisl. Cras id volutpat quam. Proin sed auctor leo. Mauris sit amet ullamcorper mauris.
-                Quisque at feugiat libero. Maecenas non metus ante. Phasellus id turpis et ex ullamcorper consequat. Etiam fermentum vitae lacus in gravida. Aenean non odio vitae arcu elementum sollicitudin et a velit. Morbi pulvinar dictum lacus, at tempus neque accumsan vel. Pellentesque at lorem at turpis convallis lacinia eu eget diam. Mauris rhoncus aliquam condimentum.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus placerat tortor ac feugiat aliquam. Nullam velit risus, tempor a pellentesque pulvinar, euismod nec massa. Vestibulum non velit est. Vestibulum ipsum lorem, finibus semper augue eget, dictum vestibulum nunc. Vestibulum id volutpat metus. Praesent nec ullamcorper eros. Vestibulum a nisl sit amet elit molestie fermentum. Cras consequat at nibh non feugiat. Curabitur ut nunc at tellus rutrum feugiat quis egestas lacus. Mauris dapibus felis at vulputate pellentesque. Phasellus quis viverra dui, et vulputate lorem. Nulla aliquam rhoncus massa non pharetra. Sed a massa in diam imperdiet pellentesque.
-                Morbi tincidunt elementum sollicitudin. In dui diam, venenatis nec risus at, efficitur malesuada justo. Nulla aliquam libero vitae mi elementum congue. Nam nibh est, suscipit nec enim vel, pulvinar ornare nisi. Suspendisse semper porttitor orci, eu posuere est interdum nec. Sed suscipit sapien scelerisque dui facilisis, et efficitur est accumsan. Vivamus quis sodales lectus. Pellentesque nisl arcu, ultrices vel nisi quis, ultricies posuere sem. Aenean enim est, sodales vitae volutpat facilisis, placerat nec nisl. Cras id volutpat quam. Proin sed auctor leo. Mauris sit amet ullamcorper mauris.
-                Quisque at feugiat libero. Maecenas non metus ante. Phasellus id turpis et ex ullamcorper consequat. Etiam fermentum vitae lacus in gravida. Aenean non odio vitae arcu elementum sollicitudin et a velit. Morbi pulvinar dictum lacus, at tempus neque accumsan vel. Pellentesque at lorem at turpis convallis lacinia eu eget diam. Mauris rhoncus aliquam condimentum.
-                </div>
+    <body>
+        <div class="container">
+            <div class="jumbotron">
+              <h1 class="Header">Grab A Bite!</h1> 
+              <h4 id="minor-header">Reinvigorate your restaraunt experience</h4> 
             </div>
-            <div class="col-4">
-                <div class="container-fluid" id="search-container">
-                    <div class="row text-center">
-                        <div class="container">
-                            <div class="container" id="location-button">
-                                <div id="custom-search-input">
-                                    <div class="input-group col-md-12">
-                                        <input type="text" class="search-query form-control" placeholder="Location" />
-                                        <span class="input-group-btn"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <br>
-                            <div class="container">
-                                    Start Date: <input id="startDate" width="276" />
-                                    End Date: <input id="endDate" width="276" />
-                            </div>
-                            <br>
-                            <button type="button" class="btn btn-secondary">Submit</button>
-                            <br>
-                            <!-- <div class="container">
-                                <label>Price</label>
-                                <select class="selectpicker">
-                                    <option>Free</option>
-                                    <option>Paid</option>
-                                    <option>No Preference</option>
-                                </select>   
-                            </div> -->
-                        </div>
+        </div>
+        <!-- <div class="container" id="search-bar">
+                <button type="button" class="btn btn-outline-dark" id="button-opacity">Find Me Food</button>
+        </div> -->
+        <div class="container">
+            <div class="row" id="">
+                <div class="col-8">
+                    <div id="map" style="width: 100%; height: 400px;"></div>
+                </div>
+                <div class=""></div>
+                <div class="col-md-4">
+                    <div class="content-holder" style="height: 400px;">
+                        <h3 id="res-info-header">Restaurant Information</h3>
+                        <div id="restaurants"></div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-0"></div>
-            <div class="col-md-12">
-                <div id="map" style="width: 1125px; height: 400px;"></div>
             </div>
-            <div class="col-md-0"></div>
         </div>
-    </div>
-
-<script
-  src="https://code.jquery.com/jquery-3.4.0.js"
-  integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="
-  crossorigin="anonymous"></script>
-<script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
-<script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
-<script src="assets/javascript/george.js"></script>
-<script src="assets/javascript/matt.js"></script>
-<script src="assets/javascript/george.js"></script>
+        <div class="footer">Firebase</div>
+    
+        <script
+        src="https://code.jquery.com/jquery-3.4.0.js"
+        integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="
+        crossorigin="anonymous"></script>
+      <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+      <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
+      <script src="assets/javascript/javascript.js"></script>
 </body>
 </html>
