@@ -1,7 +1,6 @@
 body {
     background-image: url(../images/bar.jpg);
     height: 100%;
-    cursor:url(myBall.cur),auto;
     background-repeat: no-repeat;
 }
 .jumbotron-fluid {
