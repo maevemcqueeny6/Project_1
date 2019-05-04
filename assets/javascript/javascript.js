@@ -1,24 +1,3 @@
-
-// Matt information
-
-var today = new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate());
-        $('#startDate').datepicker({
-            uiLibrary: 'bootstrap4',
-            iconsLibrary: 'fontawesome',
-            minDate: today,
-            maxDate: function () {
-                return $('#endDate').val();
-            }
-        });
-        $('#endDate').datepicker({
-            uiLibrary: 'bootstrap4',
-            iconsLibrary: 'fontawesome',
-            minDate: function () {
-                return $('#startDate').val();
-            }
-        });
-
-
 // Philip
 $( document ).ready(function() {
 
@@ -30,7 +9,6 @@ $( document ).ready(function() {
     var restaurants = [];
     
     function makeArray() { // place a callback to the map point creation function inputting the value of the array objects
-        console.log("searchresponse is: ", searchRes);
         for (var i=0; i<=8; i++) {
             newRestaurant = {
             restName: searchRes.restaurants[i].restaurant.name,
@@ -135,7 +113,6 @@ $( document ).ready(function() {
             }
             //so many problems with this, what does this do?
             req.onreadystatechange = function() {
-                console.log(req.readyState)
                 if (req.readyState === 4 && req.status === 200) {
                     opts.success(req.response);
                 } else if (req.status === "400" || req.status === "401" || req.status === "403" || req.status === "404") {
@@ -176,8 +153,6 @@ $( document ).ready(function() {
     
     function mapCenter() {
         // centers map to myLocation
-        console.log(myLocation.lat);
-        console.log(myLocation.lon);
         var map = L.map('map',{ center: [myLocation.lat, myLocation.lon], zoom: 14});
         L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', { attribution: '© OpenStreetMap' }).addTo(map);
         var myLocationFlag = L.marker([myLocation.lat, myLocation.lon]).addTo(map);
