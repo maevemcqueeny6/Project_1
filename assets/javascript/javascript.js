@@ -1,3 +1,22 @@
+// Firebase
+
+var config = {
+    // apiKey: "AIzaSyDBbWiCkM5YQzcx2U8H8bc4mU5vzSTC3Yg",
+    // authDomain: "traingame-759fc.firebaseapp.com",
+    // databaseURL: "https://traingame-759fc.firebaseio.com",
+    // projectId: "traingame-759fc",
+    // storageBucket: "traingame-759fc.appspot.com",
+    // messagingSenderId: "1036691998131"
+};
+firebase.initializeApp(config);
+
+// Create a variable to reference the database.
+var dataRef = firebase.database();
+
+// onload, pull the ip address location and store it in firebase
+// find the variable that stores the town location
+name: name; 
+
 
 // Philip
 $( document ).ready(function() {
