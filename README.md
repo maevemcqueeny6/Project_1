@@ -1,5 +1,16 @@
 # project-1
 
+# project-1 - Grab a Bite
+
+This app will use browser location data to find restaurants near the user's location.
+The data for the restaurants is used to populate flags on a map and a list of restaurants found.
+The restaurant list also includes a link to additional information on the restaurant.
+
+Future ideas:
+Provide a search input for cuisine type, location, etc...
+Visually differentiate the You-Are-Here flag.
+Populate new restaurants based on new map location when moving map.
+
 REQUIREMENTS:
 Must uses at least two APIs
 Must use AJAX to pull data
